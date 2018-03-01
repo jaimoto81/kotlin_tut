@@ -26,7 +26,26 @@ fun main(args : Array<String>){
 
 
 
-    print(" la suma de muchitos ${getSuma(1,2,3,4,5,6)}")
+    println(" la suma de muchitos ${getSuma(1,2,3,4,5,6)}")
+
+
+    println(" la factoria de 6 es  ${factorial(6)} ")
+
+    //Lists
+
+    var list1: MutableList<Int> = mutableListOf(1,2,3,4) //mutable, puede cambiar
+
+    val list2: List<Int> = listOf(1,2,3,4) //inmutable
+
+    list1.add(5)
+
+    println("get the first iten ${list1.first()}  and the last ${list1.last() }  and the second one is ${list1.get(2)}")
+
+
+    list1.forEach {  }
+
+
+
 
 }
 
